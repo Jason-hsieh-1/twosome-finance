@@ -1,0 +1,48 @@
+# ═══════════════════════════════════════════════════════════════
+#  ELIMINATION LIST: files git must never save or upload
+#  Anything matching a line below stays only on this computer.
+# ═══════════════════════════════════════════════════════════════
+
+# ── Secrets: keys, tokens, passwords, credentials ──
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+*.jks
+*.ppk
+id_rsa*
+id_ecdsa*
+id_ed25519*
+.netrc
+.npmrc
+.git-credentials
+*secret*
+*secrets*
+*credential*
+*password*
+*passwd*
+*token*
+
+# ── Personal finance data exported from the app (Export / Sync) ──
+# These contain real transactions, so they must stay private.
+twosome_*.json
+twosome_*.csv
+*.csv
+
+# ── Backups and local copies ──
+*.bak
+*.backup
+*backup*
+*.old
+
+# ── System, editor and tool files ──
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.claude/
+node_modules/
